@@ -216,7 +216,7 @@ class AutoRedis(object):
         if not selected_slave:
             raise SlaveNotFoundError
 
-        print((selected_slave[0]))
+        print(selected_slave[0])
         try:
             method = getattr(selected_slave[1], command)
         except AttributeError:
